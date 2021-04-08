@@ -1,0 +1,11 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="LightningComponentFirstParent" implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="valueFromChild" type="Decimal" ></aura:attribute>
+
+    <aura:handler name="numberInputEvent" event="c:LightningCmpEvent" action="{!c.handleEventFromChild}" phase="capture"></aura:handler>
+    <div>Value from  lightning EventChild {!v.valueFromChild}</div>
+    <c:LightningEventParent></c:LightningEventParent>
+</aura:component>

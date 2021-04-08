@@ -1,0 +1,7 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:event type="COMPONENT" description="LightningCmpEvent">
+    <aura:attribute name="numberAdded" type="Decimal"></aura:attribute>
+</aura:event> 

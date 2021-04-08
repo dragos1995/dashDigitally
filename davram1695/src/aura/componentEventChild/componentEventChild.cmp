@@ -1,0 +1,20 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="componentEventChild">
+    <div>Child</div>
+    <aura:attribute name="valueFromInput" type="Decimal" required="true"></aura:attribute>
+    <aura:attribute name="valueOnChange" type="Decimal" required="true"></aura:attribute>
+
+    //here we register the event
+    <aura:registerEvent name="numberInputEvent" type="c:LightningCmpEvent"></aura:registerEvent>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"></aura:handler>
+
+    <lightning:card title="Insert container">
+        <lightning:input type="number" value="{!v.valueFromInput}" name="inputNo" Label="Introduce a number"></lightning:input>
+        <lightning:button name="submitButton" label="Base" title="Propagate event" onclick="{!c.handleFireEvent}" ></lightning:button>
+    </lightning:card>
+
+</aura:component>

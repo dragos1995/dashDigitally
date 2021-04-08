@@ -1,0 +1,18 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="componentEventParent">
+    <aura:attribute name="valueFromChild" type="Decimal"></aura:attribute>
+
+    <aura:handler name="numberInputEvent"  includeFacets="false" event="c:LightningCmpEvent" action="{!c.handleEventOnParent}" phase="capture"></aura:handler>
+    <div>Parent</div>
+    <div>
+        value from child: {!v.valueFromChild}
+    </div>
+    <div class="slds-container_center">---------------------------------------------------</div>
+    <div class="slds-container_center">---------------------------------------------------</div>
+    <c:componentEventChild ></c:componentEventChild>
+
+
+</aura:component>
