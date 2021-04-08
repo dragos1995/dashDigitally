@@ -1,0 +1,15 @@
+<!--
+ - Created by Dragos on 01/26/21.
+ -->
+
+<!-- Select Obj Type Lds -->
+<template>
+    <lightning-card >
+        <lightning-combobox name="progress"
+                            label="Type"
+                            placeholder="Select Progress"
+                            options={searchOption}
+                            onchange={handleSearchAccount}></lightning-combobox>
+        <lightning-button variant="brand" label="Filter" title="Filter by name" onclick={handleFilter}></lightning-button>
+    </lightning-card>
+</template>
