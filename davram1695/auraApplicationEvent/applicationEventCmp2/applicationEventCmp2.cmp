@@ -1,0 +1,12 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="applicationEventCmp2">
+
+    <aura:attribute name="valueFromComponent" type="Decimal"></aura:attribute>
+
+    <aura:handler event="c:applicationEventExample" action="{!c.handleApplicationEvent}" phase="default"/>
+
+    <div> display the value from the other component {!v.valueFromComponent}</div>
+</aura:component>

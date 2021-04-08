@@ -1,0 +1,15 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="applicationEventCmp1">
+
+    <aura:attribute type="Decimal" name="valueFromInput"></aura:attribute>
+    <aura:registerEvent name="exampleAppicationEvent" type="c:applicationEventExample"></aura:registerEvent>
+
+    <lightning:card title="Insert container">
+        <lightning:input type="number" value="{!v.valueFromInput}" name="inputNo" Label="Introduce a number"></lightning:input>
+        <lightning:button name="submitButton" label="Base" title="Propagate event" onclick="{!c.handleFireEvent}" ></lightning:button>
+    </lightning:card>
+
+</aura:component>

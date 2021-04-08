@@ -1,0 +1,7 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:event type="APPLICATION" description="applicationEventExample">
+    <aura:attribute type="Decimal" name="numberParameter"></aura:attribute>
+</aura:event>

@@ -1,0 +1,19 @@
+<!--
+ - Created by Dragos on 03/12/21.
+ -->
+
+<aura:component description="applicationEventParent" implements="flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="valueFromComponent" type="Decimal"></aura:attribute>
+
+    <aura:handler event="c:applicationEventExample" action="{!c.handleApplicationEvent}" phase="default"/>
+
+    <div> display the value in container component from the other component {!v.valueFromComponent}</div>
+
+    <div>Component two</div>
+        <c:applicationEventCmp2 ></c:applicationEventCmp2>
+    <div>cmp 1 child</div>
+        <c:applicationEventCmp1child ></c:applicationEventCmp1child>
+    <div>Component one</div>
+        <c:applicationEventCmp1 ></c:applicationEventCmp1>
+</aura:component>
