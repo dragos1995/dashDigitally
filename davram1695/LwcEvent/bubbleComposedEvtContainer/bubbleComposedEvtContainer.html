@@ -1,0 +1,15 @@
+<!--
+ - Created by Dragos on 02/27/21.
+ -->
+
+<!-- Bubble Composed Evt Container -->
+<template>
+    <div id='div2' onbubblecomposed={handleBubbleComposedEvent2}>
+        <div id='div1' onbubblecomposed={handleBubbleComposedEvent}>
+            <c-bubble-composed-evt-child-one onbubblecomposed={handleBubbleComposedEvent1}></c-bubble-composed-evt-child-one>
+        </div>
+    </div>
+    <div>
+        <lightning-button variant="base" label="Display value from child" onclick={displayFieldFromChild}></lightning-button>
+    </div>
+</template>

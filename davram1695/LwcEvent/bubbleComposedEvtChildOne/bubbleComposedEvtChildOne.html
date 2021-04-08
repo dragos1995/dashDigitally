@@ -1,0 +1,14 @@
+<!--
+ - Created by Dragos on 02/27/21.
+ -->
+
+<!-- Bubble Composed Evt Child One -->
+<template>
+    <div id='div3'  onbubblecomposed={handleBubbleComposedEvent3}>
+        <div id='div2'  onbubblecomposed={handleBubbleComposedEvent2}>
+        <div id='div1' onbubblecomposed={handleBubbleComposedEvent1}>
+            <c-bubble-composed-evt-child-two onbubblecomposed={handleBubbleComposedEvent}></c-bubble-composed-evt-child-two>
+        </div>
+        </div>
+    </div>
+</template>

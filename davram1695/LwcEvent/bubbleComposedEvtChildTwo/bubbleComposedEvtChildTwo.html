@@ -1,0 +1,16 @@
+<!--
+ - Created by Dragos on 02/27/21.
+ -->
+
+<!-- Bubble Composed Evt Child Two -->
+<template>
+    <div id='div2' onbubblecomposed={handleBubbleComposedEvent3}>
+    <div id= 'div1' onbubblecomposed={handleBubbleComposedEvent2}>
+        <div  class="buttonDiv" onbubblecomposed={handleBubbleComposedEvent}>
+            <lightning-button label="Fire Event" onclick= {onFireEvent}></lightning-button>
+        </div>
+    </div>
+    </div>
+</template>
+
+
